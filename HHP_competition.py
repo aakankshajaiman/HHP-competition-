@@ -83,8 +83,8 @@ def print_missing_variables(df):
 
 def main():
     pd.options.mode.chained_assignment = None # remove the warning messages regarding chained assignment. 
-    daysinhospital = pd.read_csv('/Users/nikets/Downloads/INFS772_Ass3/HHP_release3/DaysInHospital_Y2.csv') 
-    drugcount = pd.read_csv('/Users/nikets/Downloads/INFS772_Ass3/HHP_release3/DrugCount.csv') 
+    daysinhospital = pd.read_csv('/Users/aakanksha/Downloads/INFS772_Ass3/HHP_release3/DaysInHospital_Y2.csv') 
+    drugcount = pd.read_csv('/Users/aakanksha/Downloads/INFS772_Ass3/HHP_release3/DrugCount.csv') 
     #print drugcount.columns
     li = map(process_yearly_DrugCount, process_DrugCount(drugcount))
     DrugCount_Y1_New = li[0]
